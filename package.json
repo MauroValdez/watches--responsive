@@ -12,7 +12,6 @@
     "vite": "^2.9.9"
   },
   "dependencies": {
-    "boxicons": "^2.1.2",
     "imagemin": "^8.0.1",
     "imagemin-webp": "^7.0.0",
     "swiper": "^8.2.4"
