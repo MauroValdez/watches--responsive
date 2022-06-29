@@ -1,3 +1,5 @@
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 //variables
 
@@ -41,3 +43,33 @@ function scrollHeader() {
     header.classList.remove('scroll-header');
   }
 }
+
+//swiper 
+let testimonialSwiper = new Swiper(".testimonial-swiper", {
+  spaceBetween: 30,
+  loop: 'true',
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+let newSwiper = new Swiper(".new-swiper", {
+  spaceBetween: 24,
+  loop: 'true',
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});
